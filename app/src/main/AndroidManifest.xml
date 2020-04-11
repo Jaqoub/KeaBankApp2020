@@ -22,20 +22,15 @@
 
 
 
-        <!--
-             The API key for Google Maps-based APIs.
-        -->
-        <meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="@string/google_maps_key" />
-
-        <activity android:name=".BankInfo"/>
         <activity android:name=".TransferMoneyMenu" />
         <activity android:name=".Currency" />
         <activity android:name=".Account" />
         <activity android:name=".Menu" />
+        <activity android:name=".Login"/>
         <activity android:name=".TransferMoneyToAccount" />
-        <activity android:name=".Login">
+
+        <activity android:name=".BankInfo">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
