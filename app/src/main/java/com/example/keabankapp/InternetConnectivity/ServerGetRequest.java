@@ -4,7 +4,7 @@ import android.os.AsyncTask;
 import android.util.Log;
 
 import com.example.keabankapp.Model.Accounts;
-import com.example.keabankapp.Model.TransActions;
+import com.example.keabankapp.Model.Transactions;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -58,8 +58,8 @@ public class ServerGetRequest  extends AsyncTask<String, String, String> {
     }
 
 
-    public ArrayList<TransActions> getAllTransActions(){
-        ArrayList<TransActions> transActionsArrayList = new ArrayList<>();
+    public ArrayList<Transactions> getAllTransActions(){
+        ArrayList<Transactions> transactionsArrayList = new ArrayList<>();
             try{
                 String response = execute(Url).get();
 
@@ -80,7 +80,7 @@ public class ServerGetRequest  extends AsyncTask<String, String, String> {
                 }else{
                     doubleToString = "-" + transActionAmount;
                 }
-                    transActionsArrayList.add(new TransActions(transactionName,date, doubleToString,depositAfterTransaction));
+                    transactionsArrayList.add(new Transactions(transactionName,date, doubleToString,depositAfterTransaction));
 
             }
             }catch (JSONException je){
@@ -91,6 +91,6 @@ public class ServerGetRequest  extends AsyncTask<String, String, String> {
                 ee.printStackTrace();
             }
 
-        return transActionsArrayList;
+        return transactionsArrayList;
     }
 }
