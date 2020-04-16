@@ -1,6 +1,6 @@
 package com.example.keabankapp.Model;
 
-public class TransActions {
+public class Transactions {
     private String transActionsName;
     private String message;
     private Long FromReg;
@@ -11,9 +11,9 @@ public class TransActions {
     private String transActionsAmount;
     private Double currentDeposit;
 
-    public TransActions(){}
+    public Transactions(){}
 
-    public TransActions(String transActionsName, Long fromReg, Long fromAccountNumber, Long toReg, Long toAccountNumber, String date, String transActionsAmount){
+    public Transactions(String transActionsName, Long fromReg, Long fromAccountNumber, Long toReg, Long toAccountNumber, String date, String transActionsAmount){
         this.transActionsName = transActionsName;
         this.FromReg = fromReg;
         this.fromAccountNumber = fromAccountNumber;
@@ -23,7 +23,7 @@ public class TransActions {
         this.transActionsAmount = transActionsAmount;
     }
 
-    public TransActions(String transActionsName, String message,Long fromReg, Long toReg,Long fromAccountNumber, Long toAccountNumber, String date, String transActionsAmount){
+    public Transactions(String transActionsName, String message, Long fromReg, Long toReg, Long fromAccountNumber, Long toAccountNumber, String date, String transActionsAmount){
         this.transActionsName = transActionsName;
         this.message = message;
         this.FromReg = fromReg;
@@ -36,7 +36,7 @@ public class TransActions {
 
     }
 
-    public TransActions(String transActionsName, String date, String transActionsAmount, Double currentDeposit){
+    public Transactions(String transActionsName, String date, String transActionsAmount, Double currentDeposit){
         this.transActionsName = transActionsName;
         this.date = date;
         this.transActionsAmount = transActionsAmount;

@@ -7,7 +7,7 @@
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.W" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
@@ -19,18 +19,8 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         tools:ignore="GoogleAppIndexingWarning">
-
-
-
-        <activity android:name=".TransferMoneyMenu" />
-        <activity android:name=".Currency" />
-        <activity android:name=".Account" />
-        <activity android:name=".Menu" />
-        <activity android:name=".Login"/>
-        <activity android:name=".TransferMoneyToAccount" />
-
-        <activity android:name=".BankInfo">
-
+        <activity android:name=".Tests.Login"></activity><!-- The API key for Google Maps-based APIs. -->
+        <activity android:name=".Tests.Account">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
