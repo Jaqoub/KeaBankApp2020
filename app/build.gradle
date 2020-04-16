@@ -33,5 +33,6 @@ dependencies {
     implementation 'androidx.cardview:cardview:1.0.0'
     implementation 'de.gerdi-project:GSON:6.0.6'
     implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'com.google.android.material:material:1.0.0'
 
 }
